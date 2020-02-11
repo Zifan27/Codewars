@@ -9,11 +9,12 @@ public class TakeTheFirstNElements {
     }
 
     public static int[] take(int[] arr, int n) {
+        int length = n;
         if (n > arr.length) {
-            n = arr.length;
+            length = arr.length;
         }
-        int[] arr2 = new int[n];
-        System.arraycopy(arr, 0, arr2, 0, n);
+        int[] arr2 = new int[length];
+        System.arraycopy(arr, 0, arr2, 0, length);
 
         return arr2;
     }
